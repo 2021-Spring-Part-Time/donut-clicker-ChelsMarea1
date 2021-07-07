@@ -40,7 +40,8 @@ multiplier.addEventListener('click', () => {
   multiplierCost.innerHTML = createDonut.costOfMultiplier;
   donutClicks.innerText = createDonut.donutClicks * calculateDonutClicks;
   numberOfDonuts.innerHTML = createDonut.numDonuts;
-  
-
-
 });
+
+function refreshPage(){
+  window.location.reload();
+} 
