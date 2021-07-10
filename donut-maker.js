@@ -37,9 +37,9 @@ getCostOfMultiplier () {
   //  }
     addAutoClicker() {
 
-        if (this.numDonuts >= 100) {
+        if (this.numDonuts >= this.costOfAutoClicker) {
+            this.numDonuts -= this.costOfAutoClicker;
             this.numAutoClickers++;
-            this.numDonuts -= 100;
             this.costOfAutoClicker = Math.round(this.costOfAutoClicker * 1.1);
         }
 
@@ -50,11 +50,12 @@ getCostOfMultiplier () {
             }
     }
     addMultiplier() {
-        if(this.numDonuts >= 10) {
+        if(this.numDonuts >= this.costOfMultiplier) {
+           this.numDonuts -= this.costOfMultiplier;
            this.numMultipliers++; 
-            this.numDonuts -=10;
-            this.costOfMultiplier = Math.round(this.costOfMultiplier * 1.1);            
-        } 
-        this.donutClicks = Math.pow(1.2, this.numMultipliers);  
+           this.costOfMultiplier = Math.round(this.costOfMultiplier * 1.1);            
+           this.donutClicks = Math.pow(1.2, this.numMultipliers);  
+           
     }
+}
 }
