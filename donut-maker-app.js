@@ -29,13 +29,17 @@ createDonut.addAutoClicker();
  donutClicks.innerText = createDonut.donutClicks * calculateDonutClicks;
 });
 
-//function disableAutoClickerButton () {
-//  if(this.numDonuts < this.costOfAutoClicker) {
- //   autoClicker.disabled = true;
+//let button = document.querySelector('#multiplier');
+//button.disabled = true;
+
+//function changeButton() {
+ // if(document.querySelector('#donutsPerClick').value < 'multiplierCost') {
+ //   button.disabled = true;
  // } else {
- //   autoClicker.disabled = false;
- // }
- // }
+//    button.disabled = false;
+//  }
+//multiplierCost.addEventListener('change', changeButton);
+//}
 
 setInterval(function () {
   createDonut.activateAutoClicker();
@@ -50,24 +54,6 @@ multiplier.addEventListener('click', () => {
   numberOfDonuts.innerHTML = createDonut.numDonuts;
 });
 
-//disableMultiplierButton(function () {
-//  if(this.numDonuts < this.costOfMultiplier) {
-//    autoClicker.disabled = true;
-//  } else {
- //   autoClicker.disabled = false;
- // }
-//}
-
-//function enableAutoClickerButton() {
-//if(createDonut.numDonuts < createDonut.costOfAutoClicker) {
-//  document.getElementById('autoClicker').disabled = true;
-//}
-//else {
-//  document.getElementById('autoClicker').disabled = false;
-//}
-//}
-
-
 function refreshPage(){
   window.location.reload();
 } 
@@ -77,3 +63,23 @@ const content = document.querySelector('.bio');
 bioBtn.addEventListener('click', function(){
   content.createDonut.toggle('show');
 });
+
+var modalFred = document.getElementById("modalFred");
+var modalBio = document.getElementById("modalBio");
+var fredBtn = document.getElementById("fredbtn");
+var span = document.getElementsByClassName("close")[0];
+
+fredBtn.onclick = function () {
+  modalFred.style.display = "block";
+}
+bioBtn.onclick = function () {
+  modalBio.style.display = "block";
+}
+span.onclick = function() {
+  modal.style.display = "none";
+}
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}

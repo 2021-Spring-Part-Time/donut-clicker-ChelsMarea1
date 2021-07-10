@@ -32,9 +32,6 @@ getCostOfMultiplier () {
         this.numDonuts += Math.pow(1.2, this.numMultipliers);     
 
     }
-    //disableAutoClickerButton() {
-         
-  //  }
     addAutoClicker() {
 
         if (this.numDonuts >= this.costOfAutoClicker) {
