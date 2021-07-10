@@ -4,7 +4,7 @@ body{
     background-repeat: no-repeat;
     color: rgb(80, 80, 88);  
     font-size: 20px;
-    font-family: san-serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
  
 }
 .container {
@@ -13,73 +13,82 @@ body{
     }
 .info {
     text-align: center;
-    padding: 20px;
-    padding-top: 700px;
+    padding: 10px;
     display: inline-block;
-    text-align: center;
-}
+    bottom: 0;
+    position: relative;
+    background-color: #fefefec2;
+    margin: 5px;
+    border: 1px solid #888;
+    width: 30%;
+
+    }
 #createDonut {
-    background-color: rgb(207, 178, 123);
-    color: rgb(229, 238, 238);
+    background-color: rgb(211, 205, 116);
+    color: rgb(215, 223, 222);  
     font-weight: bold;
+    font-size: 20px;
 }
 #autoClicker {
-    background-color: rgb(38, 170, 170);
-    color: rgb(229, 238, 238);
+    background-color: rgb(230, 154, 154);
+    color: rgb(215, 223, 222);  
     font-weight: bold;
+    font-size: 20px;
 }
 
 #multiplier {
-    background-color: rgb(212, 117, 181);
-    color: rgb(229, 238, 238);
+    background-color: rgb(209, 167, 204);
+    color: rgb(215, 223, 222);  
     font-weight: bold;
+    font-size: 20px;
 }
 #resetbtn {
-    background-color: rgb(50, 117, 117);
-    color: rgb(223, 236, 235);   
+    background-color: rgb(80, 197, 197);
+    color: rgb(215, 223, 222);   
     font-weight: bold; 
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 #cookieclickerbtn {
-    background-color:  rgb(50, 117, 117);
+    background-color:  rgb(80, 197, 197);
     font-weight: bold;
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 #biobtn {
-    background-color:  rgb(50, 117, 117);
-    color: rgb(223, 236, 235); 
-    font-weight: bold;  
-    
-}
-a:link {
-    color: rgb(223, 236, 235); 
+    background-color:  rgb(80, 197, 197);
+    color: rgb(215, 223, 222);  
     font-weight: bold;
+    font-size: 20px;    
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+a:link {
+    color: rgb(215, 223, 222);  
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 #fredbtn {
-    background-color: rgb(50, 117, 117);
-    color: rgb(223, 236, 235);  
+    background-color: rgb(80, 197, 197);
+    color: rgb(215, 223, 222);  
     font-weight: bold;
+    font-size: 20px;    
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     }
 .fred-addy {
     color:rgb(79, 99, 68);
     display: none;
     text-align: left;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 .bio {
-    color:rgb(79, 99, 68);
+    color:rgb(57, 75, 48);
     display: none;
     padding-top: 120px;
+    padding-bottom: 20px;
    text-align: left;
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
-.show {
-    display: block;
-}
-   
-
-@media only screen and (max-width: 961px) {
-    body {display: flex;
-    flex-direction: column;
-    }
-
-    }
     .modalFred {
         display: none; 
         position: fixed; 
@@ -99,6 +108,7 @@ a:link {
         top: 0;
         width: 100%; 
         height: 100%; 
+        padding-bottom: 20px;
         overflow: auto; 
         text-align: center;
       }
@@ -116,3 +126,9 @@ a:link {
         width: 40%;
         text-align: center;
     }
+    @media only screen and (max-width: 961px) {
+        body {display: flex;
+        flex-direction: column;
+        }
+    
+        }
