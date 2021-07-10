@@ -21,31 +21,43 @@ body{
 #createDonut {
     background-color: rgb(207, 178, 123);
     color: rgb(229, 238, 238);
+    font-weight: bold;
 }
 #autoClicker {
     background-color: rgb(38, 170, 170);
     color: rgb(229, 238, 238);
+    font-weight: bold;
 }
+
 #multiplier {
     background-color: rgb(212, 117, 181);
     color: rgb(229, 238, 238);
+    font-weight: bold;
 }
 #resetbtn {
-    background-color: darkslategrey;
-    color: rgb(229, 238, 238);  
+    background-color: rgb(50, 117, 117);
+    color: rgb(223, 236, 235);   
+    font-weight: bold; 
 }
 #cookieclickerbtn {
-    background-color: darkslategrey;
-    color: rgb(229, 238, 238);  
+    background-color:  rgb(50, 117, 117);
+    font-weight: bold;
 }
 #biobtn {
-    background-color: darkslategrey;
-    color: rgb(229, 238, 238);  
+    background-color:  rgb(50, 117, 117);
+    color: rgb(223, 236, 235); 
+    font-weight: bold;  
+    
+}
+a:link {
+    color: rgb(223, 236, 235); 
+    font-weight: bold;
 }
 #fredbtn {
-    background-color: darkslategrey;
-    color: rgb(229, 238, 238);  
-}
+    background-color: rgb(50, 117, 117);
+    color: rgb(223, 236, 235);  
+    font-weight: bold;
+    }
 .fred-addy {
     color:rgb(79, 99, 68);
     display: none;
