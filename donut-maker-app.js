@@ -29,17 +29,17 @@ createDonut.addAutoClicker();
  donutClicks.innerText = createDonut.donutClicks * calculateDonutClicks;
 });
 
-//let button = document.querySelector('#multiplier');
-//button.disabled = true;
+let button = document.querySelector('#multiplier');
+button.disabled = true;
 
-//function changeButton() {
- // if(document.querySelector('#donutsPerClick').value < 'multiplierCost') {
- //   button.disabled = true;
- // } else {
-//    button.disabled = false;
-//  }
-//multiplierCost.addEventListener('change', changeButton);
-//}
+function changeButton() {
+ if(document.querySelector('#donutsPerClick').value < 'multiplierCost') {
+   button.disabled = true;
+  } else {
+   button.disabled = false;
+  }}
+multiplierCost.addEventListener('change', changeButton);
+changeButton();
 
 setInterval(function () {
   createDonut.activateAutoClicker();
