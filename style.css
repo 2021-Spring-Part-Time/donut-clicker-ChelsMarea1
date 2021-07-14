@@ -1,0 +1,106 @@
+body{
+    background-image: url("/images/background-image.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: rgb(80, 80, 88);  
+    font-size: 20px;
+    font-family: san-serif;
+ 
+}
+.container {
+    text-align: center;
+    
+    }
+.info {
+    text-align: center;
+    padding: 20px;
+    padding-top: 700px;
+    display: inline-block;
+    text-align: center;
+}
+#createDonut {
+    background-color: rgb(207, 178, 123);
+    color: rgb(229, 238, 238);
+}
+#autoClicker {
+    background-color: rgb(38, 170, 170);
+    color: rgb(229, 238, 238);
+}
+#multiplier {
+    background-color: rgb(212, 117, 181);
+    color: rgb(229, 238, 238);
+}
+#resetbtn {
+    background-color: darkslategrey;
+    color: rgb(229, 238, 238);  
+}
+#cookieclickerbtn {
+    background-color: darkslategrey;
+    color: rgb(229, 238, 238);  
+}
+#biobtn {
+    background-color: darkslategrey;
+    color: rgb(229, 238, 238);  
+}
+#fredbtn {
+    background-color: darkslategrey;
+    color: rgb(229, 238, 238);  
+}
+.fred-addy {
+    color:rgb(79, 99, 68);
+    display: none;
+    text-align: left;
+}
+.bio {
+    color:rgb(79, 99, 68);
+    display: none;
+    padding-top: 120px;
+   text-align: left;
+}
+.show {
+    display: block;
+}
+   
+
+@media only screen and (max-width: 961px) {
+    body {display: flex;
+    flex-direction: column;
+    }
+
+    }
+    .modalFred {
+        display: none; 
+        position: fixed; 
+        z-index: 1; 
+        left: 0;
+        top: 0;
+        width: 100%; 
+        height: 100%; 
+        overflow: auto; 
+        text-align: center;
+      }
+      .modalBio {
+        display: none; 
+        position: fixed; 
+        z-index: 1; 
+        left: 0;
+        top: 0;
+        width: 100%; 
+        height: 100%; 
+        overflow: auto; 
+        text-align: center;
+      }
+      .close {
+        color: #aaa;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+      }
+     
+      .modal-content {
+        background-color: #fefefec2;
+        margin: auto;
+        border: 1px solid #888;
+        width: 40%;
+        text-align: center;
+    }
